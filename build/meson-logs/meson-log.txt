@@ -1,0 +1,217 @@
+Build started at 2019-04-24T12:39:17.773751
+Main binary: /usr/bin/python3
+Python system: Linux
+The Meson build system
+Version: 0.49.2
+Source dir: /home/john/ValaTest
+Build dir: /home/john/ValaTest/build
+Build type: cross build
+Project name: kCopy
+Project version: undefined
+Sanity testing C compiler: cc
+Is cross compiler: False.
+Sanity check compiler command line: cc /home/john/ValaTest/build/meson-private/sanitycheckc.c -o /home/john/ValaTest/build/meson-private/sanitycheckc.exe
+Sanity check compile stdout:
+
+-----
+Sanity check compile stderr:
+
+-----
+Running test binary command: /home/john/ValaTest/build/meson-private/sanitycheckc.exe
+Sanity testing C compiler: /usr/bin/i686-w64-mingw32-gcc-win32
+Is cross compiler: True.
+Sanity check compiler command line: /usr/bin/i686-w64-mingw32-gcc-win32 /home/john/ValaTest/build/meson-private/sanitycheckc.c -o /home/john/ValaTest/build/meson-private/sanitycheckc_cross.exe
+Sanity check compile stdout:
+
+-----
+Sanity check compile stderr:
+
+-----
+Running test binary command: /usr/bin/wine /home/john/ValaTest/build/meson-private/sanitycheckc_cross.exe
+Native C compiler: cc (gcc 7.3.0 "cc (Ubuntu 7.3.0-27ubuntu1~18.04) 7.3.0")
+Cross C compiler: /usr/bin/i686-w64-mingw32-gcc-win32 (gcc 7.3.0)
+Running compile:
+Working directory:  /tmp/tmpq0rxoreo
+Command line:  valac /tmp/tmpq0rxoreo/testfile.vala -C 
+
+Code:
+ class MesonSanityCheck : Object { }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Using cached compile:
+Cached command line:  valac /tmp/tmpq0rxoreo/testfile.vala -C 
+
+Code:
+ class MesonSanityCheck : Object { }
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Native Vala compiler: valac (valac 0.40.15)
+Cross Vala compiler: valac (valac 0.40.15)
+Host machine cpu family: x86
+Host machine cpu: i686
+Target machine cpu family: x86
+Target machine cpu: i686
+Build machine cpu family: x86_64
+Build machine cpu: x86_64
+Determining dependency 'sqlite3' with pkg-config executable '/usr/bin/i686-w64-mingw32-pkg-config'
+Called `/usr/bin/i686-w64-mingw32-pkg-config --modversion sqlite3` -> 0
+3.22.0
+Called `/usr/bin/i686-w64-mingw32-pkg-config --cflags sqlite3` -> 0
+
+Called `/usr/bin/i686-w64-mingw32-pkg-config sqlite3 --libs` -> 0
+-L/usr/lib/x86_64-linux-gnu -lsqlite3
+Called `/usr/bin/i686-w64-mingw32-pkg-config sqlite3 --libs` -> 0
+-lsqlite3
+Running compile:
+Working directory:  /tmp/tmp2y90tpuy
+Command line:  /usr/bin/i686-w64-mingw32-gcc-win32 /tmp/tmp2y90tpuy/testfile.c -pipe -c -o /tmp/tmp2y90tpuy/output.obj -O0 
+
+Code:
+ #include <stdio.h>
+        
+        int main(int argc, char **argv) {
+            void * something;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /tmp/tmpe2z0448c
+Command line:  /usr/bin/i686-w64-mingw32-gcc-win32 /tmp/tmpe2z0448c/testfile.c -pipe -c -o /tmp/tmpe2z0448c/output.obj -O0 
+
+Code:
+ #include <stdio.h>
+        
+        int main() { static int a[1-2*!(sizeof(void *) >= 0)]; a[0]=0; return 0; }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /tmp/tmpm_t1sq45
+Command line:  /usr/bin/i686-w64-mingw32-gcc-win32 /tmp/tmpm_t1sq45/testfile.c -pipe -c -o /tmp/tmpm_t1sq45/output.obj -O0 
+
+Code:
+ #include <stdio.h>
+        
+        int main() { static int a[1-2*!(sizeof(void *) > 0)]; a[0]=0; return 0; }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /tmp/tmp462if33z
+Command line:  /usr/bin/i686-w64-mingw32-gcc-win32 /tmp/tmp462if33z/testfile.c -pipe -c -o /tmp/tmp462if33z/output.obj -O0 
+
+Code:
+ #include <stdio.h>
+        
+        int main() { static int a[1-2*!(sizeof(void *) > 1)]; a[0]=0; return 0; }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /tmp/tmpr0tu2py3
+Command line:  /usr/bin/i686-w64-mingw32-gcc-win32 /tmp/tmpr0tu2py3/testfile.c -pipe -c -o /tmp/tmpr0tu2py3/output.obj -O0 
+
+Code:
+ #include <stdio.h>
+        
+        int main() { static int a[1-2*!(sizeof(void *) > 3)]; a[0]=0; return 0; }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /tmp/tmplhq0qpqx
+Command line:  /usr/bin/i686-w64-mingw32-gcc-win32 /tmp/tmplhq0qpqx/testfile.c -pipe -c -o /tmp/tmplhq0qpqx/output.obj -O0 
+
+Code:
+ #include <stdio.h>
+        
+        int main() { static int a[1-2*!(sizeof(void *) > 7)]; a[0]=0; return 0; }
+Compiler stdout:
+ 
+Compiler stderr:
+ /tmp/tmplhq0qpqx/testfile.c: In function 'main':
+/tmp/tmplhq0qpqx/testfile.c:3:33: error: size of array 'a' is negative
+         int main() { static int a[1-2*!(sizeof(void *) > 7)]; a[0]=0; return 0; }
+                                 ^
+
+Running compile:
+Working directory:  /tmp/tmp9zeulxip
+Command line:  /usr/bin/i686-w64-mingw32-gcc-win32 /tmp/tmp9zeulxip/testfile.c -pipe -c -o /tmp/tmp9zeulxip/output.obj -O0 
+
+Code:
+ #include <stdio.h>
+        
+        int main() { static int a[1-2*!(sizeof(void *) <= 5)]; a[0]=0; return 0; }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /tmp/tmpqkgbcq6c
+Command line:  /usr/bin/i686-w64-mingw32-gcc-win32 /tmp/tmpqkgbcq6c/testfile.c -pipe -c -o /tmp/tmpqkgbcq6c/output.obj -O0 
+
+Code:
+ #include <stdio.h>
+        
+        int main() { static int a[1-2*!(sizeof(void *) <= 4)]; a[0]=0; return 0; }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /tmp/tmp3bv47p8p
+Command line:  /usr/bin/i686-w64-mingw32-gcc-win32 /tmp/tmp3bv47p8p/testfile.c -pipe -c -o /tmp/tmp3bv47p8p/output.obj -O0 --print-search-dirs 
+
+Code:
+ 
+Compiler stdout:
+ install: /usr/lib/gcc/i686-w64-mingw32/7.3-win32/
+programs: =/usr/lib/gcc/i686-w64-mingw32/7.3-win32/:/usr/lib/gcc/i686-w64-mingw32/7.3-win32/:/usr/lib/gcc/i686-w64-mingw32/:/usr/lib/gcc/i686-w64-mingw32/7.3-win32/:/usr/lib/gcc/i686-w64-mingw32/:/usr/lib/gcc/i686-w64-mingw32/7.3-win32/../../../../i686-w64-mingw32/bin/i686-w64-mingw32/7.3-win32/:/usr/lib/gcc/i686-w64-mingw32/7.3-win32/../../../../i686-w64-mingw32/bin/
+libraries: =/usr/lib/gcc/i686-w64-mingw32/7.3-win32/:/usr/lib/gcc/i686-w64-mingw32/7.3-win32/../../../../i686-w64-mingw32/lib/i686-w64-mingw32/7.3-win32/:/usr/lib/gcc/i686-w64-mingw32/7.3-win32/../../../../i686-w64-mingw32/lib/../lib/:/usr/lib/gcc/i686-w64-mingw32/7.3-win32/../../../../i686-w64-mingw32/lib/
+
+Compiler stderr:
+ 
+Cross dependency sqlite3 found: YES 3.22.0
+Determining dependency 'gtk+-3.0' with pkg-config executable '/usr/bin/i686-w64-mingw32-pkg-config'
+Called `/usr/bin/i686-w64-mingw32-pkg-config --modversion gtk+-3.0` -> 0
+3.6.4
+Called `/usr/bin/i686-w64-mingw32-pkg-config --cflags gtk+-3.0` -> 0
+-mms-bitfields -I/opt/gtk3-win32/include/gtk-3.0 -I/opt/gtk3-win32/include/cairo -I/opt/gtk3-win32/include/pango-1.0 -I/opt/gtk3-win32/include/atk-1.0 -I/opt/gtk3-win32/include/cairo -I/opt/gtk3-win32/include/pixman-1 -I/opt/gtk3-win32/include -I/opt/gtk3-win32/include/freetype2 -I/opt/gtk3-win32/include -I/opt/gtk3-win32/include/libpng15 -I/opt/gtk3-win32/include/gdk-pixbuf-2.0 -I/opt/gtk3-win32/include/libpng15 -I/opt/gtk3-win32/include/glib-2.0 -I/opt/gtk3-win32/lib/glib-2.0/include
+Called `/usr/bin/i686-w64-mingw32-pkg-config gtk+-3.0 --libs` -> 0
+-L/opt/gtk3-win32/lib -lgtk-3 -lgdk-3 -lgdi32 -limm32 -lshell32 -lole32 -Wl,-luuid -lpangocairo-1.0 -lpangoft2-1.0 -lfreetype -lfontconfig -lpangowin32-1.0 -lgdi32 -lpango-1.0 -lm -latk-1.0 -lcairo-gobject -lcairo -lgdk_pixbuf-2.0 -lgio-2.0 -lgobject-2.0 -lglib-2.0 -lintl
+Called `/usr/bin/i686-w64-mingw32-pkg-config gtk+-3.0 --libs` -> 0
+-L/opt/gtk3-win32/lib -lgtk-3 -lgdk-3 -lgdi32 -limm32 -lshell32 -lole32 -Wl,-luuid -lpangocairo-1.0 -lpangoft2-1.0 -lfreetype -lfontconfig -lpangowin32-1.0 -lgdi32 -lpango-1.0 -lm -latk-1.0 -lcairo-gobject -lcairo -lgdk_pixbuf-2.0 -lgio-2.0 -lgobject-2.0 -lglib-2.0 -lintl
+Running compile:
+Working directory:  /tmp/tmppbha241d
+Command line:  /usr/bin/i686-w64-mingw32-gcc-win32 /tmp/tmppbha241d/testfile.c -pipe -o /tmp/tmppbha241d/output.exe -O0 -Wl,--start-group -lm -Wl,--end-group 
+
+Code:
+ int main(int argc, char **argv) { return 0; }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Cross dependency gtk+-3.0 found: YES 3.6.4
+Determining dependency 'glib-2.0' with pkg-config executable '/usr/bin/i686-w64-mingw32-pkg-config'
+Called `/usr/bin/i686-w64-mingw32-pkg-config --modversion glib-2.0` -> 0
+2.34.3
+Called `/usr/bin/i686-w64-mingw32-pkg-config --cflags glib-2.0` -> 0
+-mms-bitfields -I/opt/gtk3-win32/include/glib-2.0 -I/opt/gtk3-win32/lib/glib-2.0/include
+Called `/usr/bin/i686-w64-mingw32-pkg-config glib-2.0 --libs` -> 0
+-L/opt/gtk3-win32/lib -lglib-2.0 -lintl
+Called `/usr/bin/i686-w64-mingw32-pkg-config glib-2.0 --libs` -> 0
+-L/opt/gtk3-win32/lib -lglib-2.0 -lintl
+Cross dependency glib-2.0 found: YES 2.34.3
+Build targets in project: 1
+Found ninja-1.8.2 at /usr/bin/ninja
+WARNING: Cross file does not specify strip binary, result will not be stripped.

@@ -1,0 +1,18 @@
+# ninja log v5
+0	462	1556123965	kCopy@exe/src/Main.c	6b59974797013a2d
+0	462	1556123965	kCopy@exe/src/Application.c	6b59974797013a2d
+0	462	1556123965	kCopy@exe/src/Window.c	6b59974797013a2d
+0	462	1556123965	kCopy@exe/src/HeaderBar.c	6b59974797013a2d
+0	462	1556123965	kCopy@exe/src/ClipboardList.c	6b59974797013a2d
+0	462	1556123965	kCopy@exe/src/Clipboard.c	6b59974797013a2d
+0	462	1556123965	kCopy@exe/src/Settings.c	6b59974797013a2d
+0	462	1556123965	kCopy@exe/src/Data.c	6b59974797013a2d
+0	462	1556123965	kCopy@exe/src/Menu.c	6b59974797013a2d
+0	462	1556123965	kCopy@exe/src/Clip.c	6b59974797013a2d
+467	1040	1556123965	kCopy@exe/meson-generated_src_Clip.c.obj	7e92cd3692356eed
+463	1120	1556123965	kCopy@exe/meson-generated_src_Clipboard.c.obj	2afbb0ff1e147020
+463	1170	1556123965	kCopy@exe/meson-generated_src_Main.c.obj	e5808598a7f4f0e1
+464	1194	1556123965	kCopy@exe/meson-generated_src_ClipboardList.c.obj	90a8c70c9e5695e
+466	1407	1556123966	kCopy@exe/meson-generated_src_Menu.c.obj	431ffdfed2db53bf
+464	1452	1556123966	kCopy@exe/meson-generated_src_Settings.c.obj	66f5572ec2e8298f
+464	1638	1556123966	kCopy@exe/meson-generated_src_Window.c.obj	b13e39727a76e18e

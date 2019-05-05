@@ -1,0 +1,20 @@
+<schemalist>
+  <schema id="com.github.Maxx730.kcopy" path="/org/Maxx730/kcopy/" gettext-domain="kcopy">
+
+    <key name="initial-run" type="b">
+      <default>false</default>
+      <summary>Is this the first time starting the application?</summary>
+      <description>
+        Determines if first time running application.
+      </description>
+    </key>
+
+    <key name="show-notifications" type="b">
+      <default>false</default>
+      <summary>Show notifications on clipboard copy.</summary>
+      <description>
+        Determines if first time running application.
+      </description>
+    </key>
+  </schema>
+</schemalist>
